@@ -60,7 +60,7 @@ section {
   overflow: hidden;
 }
 
-/* section 0 */
+/* section 00 */
 /* <div> : 왼쪽 메뉴 바*/
 .menu {
   border: 1px solid yellow;
@@ -263,6 +263,63 @@ section {
   }
 }
 
-.sec1 {
-  display: block;
+/* section 02 */
+.sec2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: 1px solid yellowgreen;
 }
+.sec2_title {
+  position: absolute;
+  left: 100px;
+  width: 700px;
+  height: 50px;
+  font-family: Black Han Sans;
+  font-size: 2rem;
+  line-height: 50px;
+  opacity: 0;
+}
+.sec2_title1 {
+  top: 100px;
+  animation: sec2_title1_ani 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes sec2_title1_ani {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    top: 100px;
+    opacity: 1;
+  }
+}
+.sec2_title2 {
+  top: 150px;
+  animation: sec2_title2_ani 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes sec2_title2_ani {
+  0% {
+    left: -300px;
+    opacity: 0;
+  }
+  100% {
+    top: 150px;
+    opacity: 1;
+  }
+}
+
+/* section 03 */
+
+/* section 04 */
+
+/* .sec2 {
+  display: block;
+} */
