@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f8f8f8;
+  list-style-type: none;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+/* <div> : background */
+.ground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: url(../img/black-1072366_1280.jpg);
+  background-size: "100% 100%"; */
+  z-index: -1;
+  /* background-color: rgb(73, 73, 73); */
+  background-color: rgb(102, 101, 101);
+}
+
+/* <ul> : 상단 메뉴 */
+.title {
+  border: 1px solid skyblue;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.title li {
+  /* border: 1px solid yellow; */
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.title li:hover {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+section {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  border: 5px solid red;
+  display: none;
+  overflow: hidden;
+}
+
+/* section 0 */
+/* <div> : 왼쪽 메뉴 바*/
+.menu {
+  border: 1px solid yellow;
+  width: 100px;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.menu:hover .menuList {
+  display: block;
+}
+.menu p {
+  border: 1px solid skyblue;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+}
+.menu .menuList {
+  border: 1px solid yellowgreen;
+  display: none;
+}
+.menu .menuList li {
+  border: 1px solid blue;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.menu .menuList li:hover {
+  font-size: 1.3rem;
+  background-color: rgb(184, 184, 184);
+}
+
+/* <div> : Tip */
+.tip {
+  position: fixed;
+  bottom: 200px;
+  right: 0px;
+  border: 1px solid yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+}
+.tip:hover div {
+  margin-left: -200px;
+}
+.tip p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.tip div {
+  border: 1px solid skyblue;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 50px;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s;
+  background-color: rgb(255, 196, 0);
+}
+
+/* div : Content */
+.largeBox {
+  border: 1px solid yellow;
+  position: fixed;
+  top: 200px;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+.largeBox .largeBoxText1 {
+  border: 1px solid skyblue;
+  width: 500px;
+  height: 50px;
+  font-size: 1.7rem;
+  line-height: 50px;
+  margin-top: 40px;
+  margin-left: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.largeBox .largeBoxImg {
+  border: 1px solid yellowgreen;
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+.largeBox .largeBoxImg table {
+  width: 100%;
+}
+.largeBox .largeBoxImg table tr td img {
+  width: 300px;
+}
+.largeBox .largeBoxImg table tr,
+.largeBox .largeBoxImg table tr td {
+  width: 50%;
+  border: 1px solid black;
+}
+
+/* section 01 */
+.sec1 .ground1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* border: 1px solid yellowgreen; */
+  background: url(../img/black-1072366_1280.jpg);
+  background-size: 100% 100%;
+  animation: ground1_ani 2s;
+}
+/* animation :scale 1.5로 시작(0%)해서 1로 끝(100%) */
+@keyframes ground1_ani {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sec1_title {
+  position: absolute;
+  left: 100px;
+  width: 700px;
+  height: 50px;
+  font-family: Black Han Sans;
+  font-size: 2rem;
+  line-height: 50px;
+  opacity: 0;
+}
+.sec1_title1 {
+  top: 100px;
+  animation: sec1_title1_ani 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes sec1_title1_ani {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    top: 100px;
+    opacity: 1;
+  }
+}
+.sec1_title2 {
+  top: 150px;
+  animation: sec1_title2_ani 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes sec1_title2_ani {
+  0% {
+    left: -300px;
+    opacity: 0;
+  }
+  100% {
+    top: 150px;
+    opacity: 1;
+  }
+}
+
+.sec1_img {
+  position: absolute;
+  top: 100px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid red; */
+  animation: sec1_img_ani 3s linear infinite;
+}
+.sec1_img img {
+  width: 100px;
+}
+@keyframes sec1_img_ani {
+  0% {
+    left: 10px;
+  }
+  20% {
+    top: 150px;
+  }
+  40% {
+    top: 200px;
+  }
+  60% {
+    top: 170px;
+  }
+  100% {
+    left: 400px;
+  }
+}
+
+.sec1 {
+  display: block;
+}

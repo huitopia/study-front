@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+
+  <div class="layout_1">
+    <div class="left">
+      <div class="pic">
+        <img src="img/img01.jpeg" alt="">
+      </div>
+      <p class="text_1">
+        백엔드
+      </p>
+      <p class="text_2">
+        이름
+      </p>
+      <p class="text_3">
+        name
+      </p>
+
+      <p class="menu_1 menu" onclick="func(1)">현재 상황</p>
+      <p class="menu_2 menu" onclick="func(2)">목표 설정</p>
+      <p class="menu_3 menu" onclick="func(3)">나의 강점</p>
+      <p class="menu_4 menu" onclick="func(4)">개발 영역</p>
+      <p class="menu_5 menu" onclick="func(5)">스킬 계획</p>
+      <p class="menu_6 menu" onclick="func(6)">네트워킹 전략</p>
+
+      <p class="text_4 leftText">연락처</p>
+      <p class="text_5 leftText">010-0000-0000</p>
+      <p class="text_6 leftText">aaa@naver.com</p>
+      <p class="text_7 leftText">서울 서대문구</p>
+    </div>
+    <script>
+      function func(js) {
+        view_1.style.display = 'none';
+        view_2.style.display = 'none';
+        view_3.style.display = 'none';
+        view_4.style.display = 'none';
+        view_5.style.display = 'none';
+        view_6.style.display = 'none';
+        this["view_" + js].style.display = 'block';
+      }
+    </script>
+
+    <div class="right" id="view_1">
+      <p>현재상황</p>
+    </div>
+    <div class="right" id="view_2">
+      <p>목표 설정</p>
+      <p class="p_title">어떤 직업에 도전하고 싶은지에 대한 비전 소개</p>
+      <p class="p_title">구체적이고 현실적인 목표 설정</p>
+    </div>
+    <div class="right" id="view_3">
+      <p>나의 강점</p>
+      <p class="p_title">내 강점은 무엇인지?</p>
+      <p class="p_title">강점을 더욱 강화하기 위한 나만의 전략</p>
+    </div>
+    <div class="right" id="view_4">
+      <p>개발 영역</p>
+      <p class="p_title">현재 산업 동향과 자기 분야에 필요한 기술 습득</p>
+      <p class="p_title">수요가 높은 분야 파악</p>
+    </div>
+    <div class="right" id="view_5">
+      <p>스킬 계획</p>
+      <p class="p_title">필요한 스킬 목록</p>
+      <p class="p_desc">HTML, CSS, JAVASCRIPT, JAVA, HTML, CSS, JAVASCRIPT, JAVA, HTML, CSS, JAVASCRIPT, JAVA, HTML,
+        CSS, JAVASCRIPT, JAVA, HTML, CSS, JAVASCRIPT, JAVA, HTML, CSS, JAVASCRIPT, JAVA, </p>
+      <p class="p_title">스킬 개발을 위한 계획 및 일정</p>
+    </div>
+    <div class="right" id="view_6">
+      <p>전략</p>
+    </div>
+  </div>
+
+</body>
+
+
+</html>

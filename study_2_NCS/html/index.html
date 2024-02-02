@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCS</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://kit.fontawesome.com/bc7a0b30a7.js" crossorigin="anonymous"></script>
+
+  </script>
+</head>
+<script>
+  let menuLeftBtn = (x) => {
+    menuView_1.style.display = "none";
+    menuView_2.style.display = "none";
+    menuView_3.style.display = "none";
+    menuView_4.style.display = "none";
+    menuView_5.style.display = "none";
+    this["menuView_" + x].style.display = "flex";
+  }
+
+  let contentBtn = (y) => {
+    desc1.style.display = "none";
+    desc2.style.display = "none";
+    desc3.style.display = "none";
+    desc4.style.display = "none";
+    desc5.style.display = "none";
+    desc6.style.display = "none";
+    desc7.style.display = "none";
+    desc8.style.display = "none";
+    desc9.style.display = "none";
+    desc10.style.display = "none";
+    desc11.style.display = "none";
+    desc12.style.display = "none";
+    desc13.style.display = "none";
+    desc14.style.display = "none";
+    desc15.style.display = "none";
+    this["desc" + y].style.display = "block";
+  }
+</script>
+
+<body>
+  <div class="title">NCS소개</div>
+
+  <div class="menu">
+    <div class="left">
+      <p onclick="menuLeftBtn(1)">NCS란 무엇인가</p>
+      <p onclick="menuLeftBtn(2)">학습모듈</p>
+      <p onclick="menuLeftBtn(3)">산업별 역량체계</p>
+      <p onclick="menuLeftBtn(4)">NCS 활용</p>
+      <p onclick="menuLeftBtn(5)">직업기초능력</p>
+    </div>
+    <div class="right">
+      <!-- NCS란 무엇인가 -->
+      <div id="menuView_1">
+        <p class="icon" onclick="contentBtn(1)">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(2)">
+          <i class="fa-solid fa-brain"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(3)">
+          <i class="fa-regular fa-handshake"></i>
+        </p>
+
+        <p class="icon_text" onclick="contentBtn(1)">기술</p>
+        <p class="icon_text" onclick="contentBtn(2)">지식</p>
+        <p class="icon_text" onclick="contentBtn(3)">태도</p>
+      </div>
+      <!-- 학습모듈 -->
+      <div id="menuView_2">
+        <p class="icon" onclick="contentBtn(4)">
+          <i class="fa-brands fa-accusoft"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(5)">
+          <i class="fa-brands fa-accusoft"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(6)">
+          <i class="fa-brands fa-accusoft"></i>
+        </p>
+
+        <p class="icon_text" onclick="contentBtn(4)">대분류</p>
+        <p class="icon_text" onclick="contentBtn(5)">중분류</p>
+        <p class="icon_text" onclick="contentBtn(6)">소분류</p>
+      </div>
+      <!-- 산업별 역량체계 -->
+      <div id="menuView_3">
+        <p class="icon" onclick="contentBtn(7)">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(8)">
+          <i class="fa-solid fa-house-laptop"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(9)">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </p>
+
+        <p class="icon_text" onclick="contentBtn(7)">개발현황</p>
+        <p class="icon_text" onclick="contentBtn(8)">활용사례</p>
+        <p class="icon_text" onclick="contentBtn(9)">적용 가이드</p>
+      </div>
+      <!-- NCS 활용 -->
+      <div id="menuView_4">
+        <p class="icon" onclick="contentBtn(10)">
+          <i class=" fa-solid fa-list-check"></i>
+        </p>
+        <p class=" icon" onclick="contentBtn(11)">
+          <i class="fa-brands fa-accusoft"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(12)">
+          <i class="fa-solid fa-file-lines"></i>
+        </p>
+
+        <p class="icon_text" onclick="contentBtn(10)">프로젝트</p>
+        <p class="icon_text" onclick="contentBtn(11)">훈련사항</p>
+        <p class="icon_text" onclick="contentBtn(12)">교육내용</p>
+      </div>
+      <!-- 직업기초능력 -->
+      <div id="menuView_5">
+        <p class="icon" onclick="contentBtn(13)">
+          <i class="fa-solid fa-users"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(14)">
+          <i class="fa-solid fa-globe"></i>
+        </p>
+        <p class="icon" onclick="contentBtn(15)">
+          <i class="fa-solid fa-network-wired"></i>
+        </p>
+
+        <p class="icon_text" onclick="contentBtn(13)">인사관리</p>
+        <p class="icon_text" onclick="contentBtn(14)">기술분야</p>
+        <p class="icon_text" onclick="contentBtn(15)">SQF</p>
+      </div>
+    </div>
+  </div>
+  <!-- 기술 -->
+  <div id="desc1" class="content1 content">
+    <div class="content_title"">
+      <p style=" width: 100%;">NCS 기반 취업 전략과 취업 역량 코칭</p>
+      <p style="width: 100%;">NCS의 개념과 목적</p>
+      <p style="width: 100%; font-size: 1.5rem;">국가 직무 능력 표준을 기반으로 하는 직무 역량 표준화 시스템</p>
+    </div>
+  </div>
+  <!-- 지식 -->
+  <div id="desc2" class="content2 content">
+    <div class="content_title">
+      <p style="width: 40%;">경쟁력 강화</p>
+      <p style="width: 40%;">미래지향적</p>
+    </div>
+  </div>
+  <!-- 태도 -->
+  <div id="desc3" class="content3 content">
+    <div class="content3_box">
+      <div>열정적인 태도</div>
+      <div>진취적인 태도</div>
+      <div>학습 의지</div>
+      <div>도전 정신</div>
+    </div>
+    <div class="content3_img">
+    </div>
+    <p class="content3_img_text">사진 제목 자리</p>
+  </div>
+  <!-- 대분류 -->
+  <div id="desc4" class="content4 content"></div>
+  <!-- 중분류 -->
+  <div id="desc5" class="content5 content">
+
+  </div>
+  <div id="desc6" class="content6 content">소분류</div>
+  <div id="desc7" class="content7 content">개발현황</div>
+  <div id="desc8" class="content8 content">활용사례</div>
+  <div id="desc9" class="content9 content">적용 가이드</div>
+  <div id="desc10" class="content10 content">프로젝트</div>
+  <div id="desc11" class="content11 content">훈련사항</div>
+  <div id="desc12" class="content12 content">교육내용</div>
+  <div id="desc13" class="content13 content">인사관리</div>
+  <div id="desc14" class="content14 content">기술분야</div>
+  <!-- SQF -->
+  <div id="desc15" class="content15 content">
+    <div class="content_title">
+      <p>직무분석</p>
+      <p>훈련정보</p>
+      <p>직업정보</p>
+      <p>채용공고</p>
+    </div>
+    <div class="content15_box">
+      <div>
+        <img src="img/rubiks-cube-151670_1280.png" alt="">
+      </div>
+      <div>
+        <p>설명-1</p>
+        <p>설명-2</p>
+        <p>설명-3</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
