@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.menu {
+  width: 100%;
+  height: 70px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu li {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
+
+section {
+  width: 100%;
+  height: 3000px;
+  border: 5px solid gray;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+section div {
+  border: 1px solid green;
+}
+
+.left {
+  width: 10%;
+  height: 100%;
+}
+.left div {
+  /* border: 1px solid blue; */
+  width: 80%;
+  height: 50px;
+  margin: 50px auto;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.right {
+  width: 90%;
+  height: 100%;
+}
+.right div {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.right div:first-child {
+  height: 90%;
+}
+.right div:last-child {
+  height: 10%;
+}
+/*해당 메뉴의 본문이 나오는 공간*/
+.right .right_up {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.right .right_up article {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: gray;
+}
+
+.right .right_up .at3 {
+  display: block;
+}
+
+section .title {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 80%;
+  height: 50px;
+  font-size: 1.5rem;
+  line-height: 50px;
+  border: 1px solid black;
+}
+
+.right .right_up .at0 .at0_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 100px;
+}
+.right .right_up .at0 .at0_box0 {
+  top: 50px;
+  left: 150px;
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+.right .right_up .at0 .at0_box1 {
+  top: 150px;
+  left: 550px;
+}
+.right .right_up .at0 .at0_box2 {
+  top: 250px;
+  left: 950px;
+}
+.right .right_up .at0 .at0_box3 {
+  top: 350px;
+  left: 1350px;
+}
+.right .right_up .at0 .at0_box4 {
+  top: 450px;
+  left: 1750px;
+}
+.right .right_up .at0 .at0_box5 {
+  top: 650px;
+  left: 2150px;
+}
+.right .right_up .at0 .at0_box6 {
+  top: 750px;
+  left: 2550px;
+}
+.right .right_up .at0 .at0_box7 {
+  top: 850px;
+  left: 3050px;
+}
+.right .right_up .at0 .at0_box8 {
+  top: 950px;
+  left: 3450px;
+}
+.right .right_up .at0 .at0_box9 {
+  top: 1050px;
+  left: 3850px;
+}
