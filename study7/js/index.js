@@ -127,13 +127,14 @@ let menuBtn = () => {
     }
     iconNo = 1;
   } else {
-    // $(".menu").animate({ left: "-300px" }, 300);
-    // iconNo = 0;
+    $(".menu").animate({ left: "-300px" }, 300);
+    iconNo = 0;
   }
 };
 
 let picListView = menuNo => {
   $(".pic-list").css("display", "block");
+  $(".pic-list li").css("border", "1px solid rgb(210, 210, 210)");
   for (let j = 0; j < 4; j++) {
     $(".pic-list-" + j).css(
       "backgroundImage",
@@ -165,34 +166,10 @@ $(function () {
     iconNo = 1;
     let menuNo = $(this).index();
 
-    menuBtn(iconNo);
-    picListView(menuNo);
-
-    //-- 메뉴 클릭시 상단으로 올리기
-    $(".menu").css({
-      display: "flex",
-      justifyContent: "space-around",
-      width: "100%",
-      top: "80px",
-    });
-    $(".menu div").css({
-      textIndent: "0",
-      textAlign: "center",
-    });
-    $(".menu div").hover(
-      function () {
-        $(this).css({
-          cursor: "pointer",
-          backgroundColor: "rgb(228, 228, 228)",
-        });
-      },
-      function () {
-        $(this).css({ backgroundColor: "rgb(250, 250, 250)" });
-      },
-    );
-    //
     menuClickColor(menuNo);
+    picListView(menuNo);
     firstView(menuNo);
+    menuBtn(iconNo);
     $(".pic-list li").on("click", function () {
       let picNo = $(this).index();
       listClickColor(picNo);

@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "ChosunBg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: "ChosunBg";
 }
 
 header {
@@ -45,7 +53,7 @@ header {
   height: 50px;
   text-indent: 20%;
   line-height: 50px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 10px;
   background-color: rgb(250, 250, 250);
   cursor: pointer;
@@ -102,7 +110,6 @@ main .main-content .main-title {
   position: absolute;
   top: 5px;
   left: 20%;
-  font-weight: bolder;
 }
 main .main-content .main-pic {
   border: 1px solid rgb(168, 168, 168);
