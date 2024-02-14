@@ -25,7 +25,12 @@ window.onload = function () {
   //-- 햄버거 찍기
   let listLength = $(".at0-box li").length;
   for (i = 0; i < listLength; i++) {
+    // article 2
     $(".at0-box li:eq(" + i + ")")
+      .css("background", "url(img/at0/" + data.at0Img[i] + ")")
+      .css("backgroundSize", "100% 100%");
+    // article 1
+    $(".at1-box li:eq(" + i + ")")
       .css("background", "url(img/at0/" + data.at0Img[i] + ")")
       .css("backgroundSize", "100% 100%");
   }
@@ -44,5 +49,24 @@ $(function () {
       .stop()
       .animate({ right: "-20%" }, 1500)
       .css("display", "none");
+  });
+
+  $(".at0-box li").on("click", function () {
+    let listNo = $(this).index();
+    $(".at0-img img").attr("src", "img/at0/" + data.at0Img[listNo]);
+  });
+
+  //-- at1 btn img slide
+  let cnt = 0;
+  $(".at1-btn li").on("click", function () {
+    let at1No = $(this).index();
+    if (at1No == 2 && cnt < 3) {
+      cnt++;
+      $(".at1-img").animate({ left: "-=100%" }, 500);
+    } else if (at1No == 0 && cnt > 0) {
+      cnt--;
+      $(".at1-img").animate({ left: "+=100%" }, 500);
+    }
+    $(".disp").text(cnt + 1 + " / 4");
   });
 });
