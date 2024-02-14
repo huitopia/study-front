@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/bc7a0b30a7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+    }
+
+    div button {
+      border: 1px solid black;
+      width: 100px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    div p {
+      border: 1px solid black;
+      width: 500px;
+      height: 30px;
+      margin-top: 10px;
+      position: absolute;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <button id="btn0">아메리카노</button>
+    <button id="btn1">라떼</button>
+    <button id="btn2">카푸치노</button>
+  </div>
+  <div>
+    <p id="con0"> 아메리카노 설명</p>
+    <p id="con1"> 라떼 설명</p>
+    <p id="con2">카푸치노 설명</p>
+  </div>
+</body>
+
+</html>
+<script>
+  window.onload = function () {
+    let btn0 = document.getElementById("btn0");
+    let con0 = document.getElementById("con0");
+    let btn1 = document.getElementById("btn1");
+    let con1 = document.getElementById("con1");
+    let btn2 = document.getElementById("btn2");
+    let con2 = document.getElementById("con2");
+    btn0.addEventListener("click", function () {
+      con0.style.display = "block";
+      con1.style.display = "none"
+      con2.style.display = "none"
+    });
+    btn1.addEventListener("click", function () {
+      con1.style.display = "block";
+      con0.style.display = "none"
+      con2.style.display = "none"
+    });
+    btn2.addEventListener("click", function () {
+      con2.style.display = "block";
+      con0.style.display = "none"
+      con1.style.display = "none"
+    });
+  }
+</script>

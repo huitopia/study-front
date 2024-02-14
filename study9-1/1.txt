@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://kit.fontawesome.com/bc7a0b30a7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+    }
+
+    ul {
+      width: 1200px;
+      height: 100px;
+      display: flex;
+    }
+
+    ul li {
+      border: 1px solid green;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>아메리카노</li>
+      <li>카푸치노</li>
+      <li>밀크커피</li>
+      <li>딸기커피</li>
+      <li>블랙커피</li>
+    </ul>
+  </nav>
+</body>
+
+</html>
