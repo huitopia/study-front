@@ -13,6 +13,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* -- menu -- */
 .menu-call {
   /* border: 1px solid black; */
   width: 100px;
@@ -58,6 +59,7 @@ body {
   height: 100%;
 }
 
+/* -- article -- */
 article {
   border: 1px solid rgb(0, 0, 0);
   position: absolute;
@@ -90,6 +92,7 @@ article {
   top: 300%;
 }
 
+/* -- article 0 -- */
 .at0-wall {
   border: 1px solid black;
   width: 80%;
@@ -112,7 +115,7 @@ article {
   justify-content: space-evenly;
 }
 .at0-box li {
-  /* border: 2px solid black; */
+  border: 4px solid rgb(237, 237, 237);
   width: 120px;
   height: 100%;
   border-radius: 100%;

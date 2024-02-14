@@ -22,7 +22,7 @@ window.onload = function () {
     // title[i].style.background = data.titleColor[i];
   }
 
-  //-- 햄버거 이미지 찍기
+  //-- 햄버거 찍기
   let listLength = $(".at0-box li").length;
   for (i = 0; i < listLength; i++) {
     $(".at0-box li:eq(" + i + ")")
