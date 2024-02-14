@@ -8,7 +8,6 @@
 
   <script src="https://kit.fontawesome.com/bc7a0b30a7.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
   <style>
     * {
       margin: 0;
@@ -17,31 +16,56 @@
       list-style: none;
     }
 
-    div {
+    div button {
       border: 1px solid black;
-      width: 1200px;
-      height: 300px;
-      text-align: center;
-      display: flex;
-      justify-content: space-evenly;
+      width: 100px;
+      height: 30px;
+      cursor: pointer;
     }
 
-    div img {
-      border: 1px solid violet;
-      width: 300px;
-      height: 150px;
-      background-size: 100% 100%;
-      margin: auto;
+    div p {
+      border: 1px solid black;
+      width: 500px;
+      height: 30px;
+      margin-top: 10px;
+      position: absolute;
+      display: none;
     }
   </style>
 </head>
 
 <body>
   <div>
-    <img src="img/img0.jpg" alt="">
-    <img src="img/img1.jpg" alt="">
-    <img src="img/img2.jpg" alt="">
+    <button id="btn0" onclick="a()">아메리카노</button>
+    <button id="btn1" onclick="b()">라떼</button>
+    <button id="btn2" onclick="c()">카푸치노</button>
+  </div>
+  <div>
+    <p id="con0"> 아메리카노 설명</p>
+    <p id="con1"> 라떼 설명</p>
+    <p id="con2">카푸치노 설명</p>
   </div>
 </body>
 
 </html>
+<script>
+  let con0 = document.getElementById("con0");
+  let con1 = document.getElementById("con1");
+  let con2 = document.getElementById("con2");
+
+  let a = () => {
+    con0.style.display = "block";
+    con1.style.display = "none"
+    con2.style.display = "none"
+  }
+  let b = () => {
+    con1.style.display = "block";
+    con0.style.display = "none"
+    con2.style.display = "none"
+  }
+  let c = () => {
+    con2.style.display = "block";
+    con0.style.display = "none"
+    con1.style.display = "none"
+  }
+</script>
