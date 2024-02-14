@@ -10,10 +10,11 @@ const data = {
   at0Img: ["img0.jpg", "img1.jpg", "img2.jpg", "img3.jpg"],
 };
 
+let i;
 window.onload = function () {
   //-- javascript
   // let title = document.getElementsByClassName("title");
-  for (let i = 0; i < data.articleTitle.length; i++) {
+  for (i = 0; i < data.articleTitle.length; i++) {
     $(".title" + i)
       .html(data.articleTitle[i])
       .css("backgroundColor", data.titleColor[i]);
@@ -22,10 +23,11 @@ window.onload = function () {
   }
 
   //-- 햄버거 이미지 찍기
-  let positionLeft = 5;
-  for (let j = 0; j < data.at0Img.length; j++) {
-    $(".at0-wall img:eq(" + j + ")").css("left", positionLeft + "%");
-    positionLeft += 25;
+  let listLength = $(".at0-box li").length;
+  for (i = 0; i < listLength; i++) {
+    $(".at0-box li:eq(" + i + ")")
+      .css("background", "url(img/at0/" + data.at0Img[i] + ")")
+      .css("backgroundSize", "100% 100%");
   }
 };
 
