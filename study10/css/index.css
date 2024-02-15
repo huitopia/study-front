@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+
+header {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 70px;
+  font-size: 2rem;
+  line-height: 70px;
+  text-indent: 50px;
+}
+
+nav {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+nav .menu {
+  /* border: 1px solid blue; */
+  width: 10%;
+  height: 100%;
+}
+nav .menu .menu-title {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 50px;
+  /* text-align: center; */
+  text-indent: 20px;
+  line-height: 50px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+nav .menu .sub {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: none;
+}
+nav .menu .sub li {
+  /* border: 1px solid blue; */
+  border-radius: 15px;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* hover */
+nav:hover {
+  height: auto;
+  background-color: rgba(245, 245, 245, 0.936);
+  transition: all 0.5s;
+  /* overflow: hidden; */
+}
+nav .menu:hover .sub {
+  display: block;
+}
+nav .menu .sub li:hover {
+  background-color: rgb(220, 220, 220);
+  font-weight: bolder;
+}
+
+/* section 0 */
+section {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  background-color: rgb(252, 252, 252);
+  width: 100%;
+  height: 1200px;
+}
+
+.section-title {
+  border: 1px solid blue;
+  width: 100%;
+  height: 70px;
+}
+.ch {
+  border: 1px solid black;
+  width: 100%;
+  height: 90%;
+}
